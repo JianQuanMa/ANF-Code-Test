@@ -6,6 +6,15 @@
 import UIKit
 
 class ANFExploreCardTableViewController: UITableViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        tableView.dataSource = self
+        
+        // Register the nib for the ExploreContentCell
+        tableView.register(UINib(nibName: "ExploreContentCell", bundle: nil), forCellReuseIdentifier: "ExploreContentCell")
+    }
 
     private var exploreData: [[AnyHashable: Any]]? {
         if let filePath = Bundle.main.path(forResource: "exploreData", ofType: "json"),
