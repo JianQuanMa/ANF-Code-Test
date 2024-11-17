@@ -15,6 +15,7 @@
 		3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */; };
 		3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */; };
 		3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */; };
+		4E16E6092CEAB3400003C32F /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E16E6082CEAB3400003C32F /* CellModel.swift */; };
 		4EF30CC22CEAA5AE0039F0E4 /* ExploreContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF30CC02CEAA5AE0039F0E4 /* ExploreContentCell.swift */; };
 		4EF30CC32CEAA5AE0039F0E4 /* ExploreContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF30CC12CEAA5AE0039F0E4 /* ExploreContentCell.xib */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewControllerTests.swift; sourceTree = "<group>"; };
 		3E727EEB2672708B006C11AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewController.swift; sourceTree = "<group>"; };
+		4E16E6082CEAB3400003C32F /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		4EF30CC02CEAA5AE0039F0E4 /* ExploreContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreContentCell.swift; sourceTree = "<group>"; };
 		4EF30CC12CEAA5AE0039F0E4 /* ExploreContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreContentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 				3E4AB9392676D86100C79456 /* exploreData.json */,
 				4EF30CC02CEAA5AE0039F0E4 /* ExploreContentCell.swift */,
 				4EF30CC12CEAA5AE0039F0E4 /* ExploreContentCell.xib */,
+				4E16E6082CEAB3400003C32F /* CellModel.swift */,
 			);
 			path = "ANF Code Test";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
 				4EF30CC22CEAA5AE0039F0E4 /* ExploreContentCell.swift in Sources */,
 				3E727ED326727088006C11AC /* AppDelegate.swift in Sources */,
+				4E16E6092CEAB3400003C32F /* CellModel.swift in Sources */,
 				3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
