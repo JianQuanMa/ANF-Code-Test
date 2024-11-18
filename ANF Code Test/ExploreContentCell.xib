@@ -18,7 +18,48 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hmi-wv-lkz">
-                        <rect key="frame" x="0.0" y="0.0" width="583" height="343"/>
+                        <rect key="frame" x="0.0" y="0.0" width="312" height="343"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mjd-s7-D5s" userLabel="backgroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="312" height="161"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IGZ-KY-HQS" userLabel="topDescLabel">
+                                <rect key="frame" x="270" y="161" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gGI-Hw-RvB" userLabel="titleLabel">
+                                <rect key="frame" x="135" y="161" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7la-To-BFd" userLabel="promoMessageLabel">
+                                <rect key="frame" x="135" y="161" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UjD-hj-5tk" userLabel="bottomDescLabel">
+                                <rect key="frame" x="135" y="161" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Ky-xj-N9F" userLabel="contentStackView">
+                                <rect key="frame" x="0.0" y="182" width="312" height="161"/>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mjd-s7-D5s" secondAttribute="trailing" id="AUj-J7-0lY"/>
+                            <constraint firstItem="mjd-s7-D5s" firstAttribute="top" secondItem="hmi-wv-lkz" secondAttribute="top" id="BFn-pZ-NmU"/>
+                            <constraint firstItem="mjd-s7-D5s" firstAttribute="leading" secondItem="hmi-wv-lkz" secondAttribute="leading" id="iqb-fy-J09"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
@@ -29,6 +70,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="mjd-s7-D5s" id="j7j-SD-Y39"/>
+                <outlet property="bottomDescLabel" destination="UjD-hj-5tk" id="ElM-rq-R5i"/>
+                <outlet property="contentStackView" destination="9Ky-xj-N9F" id="pmW-WC-Ali"/>
+                <outlet property="promoMessageLabel" destination="7la-To-BFd" id="kGK-uY-eIg"/>
+                <outlet property="titleLabel" destination="gGI-Hw-RvB" id="Y9G-8V-zBt"/>
+                <outlet property="topDescLabel" destination="IGZ-KY-HQS" id="QR1-Jn-qa0"/>
+            </connections>
             <point key="canvasLocation" x="112.21374045801527" y="25"/>
         </tableViewCell>
     </objects>
